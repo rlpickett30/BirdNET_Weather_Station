@@ -1,1 +1,21 @@
+# macOS
 .DS_Store
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+
+# Virtual environments
+venv/
+env/
+
+# SQLite database and outputs
+data/weather_station.db
+data/*.png
+data/summary.txt
+
+# IDE/editor files
+.vscode/
+*.swp
+
