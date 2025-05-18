@@ -1,6 +1,6 @@
-# Weather_Station
-A compact weather station for Raspberry Pi, integrating BirdNET for bird call identification alongside precise environmental monitoring, including temperature, humidity, barometric pressure, dew point, and storm alerts. Ideal for nature enthusiasts and researchers.
 # BirdNET Weather Station
+
+A compact weather station for Raspberry Pi, integrating BirdNET for bird call identification alongside precise environmental monitoring, including temperature, humidity, barometric pressure, dew point, and storm alerts. Ideal for nature enthusiasts and researchers.
 
 ## Features
 
@@ -27,7 +27,7 @@ A compact weather station for Raspberry Pi, integrating BirdNET for bird call id
 * Raspberry Pi OS (64-bit recommended)
 * Python 3.11+
 * Git (for version control)
-* BirdNET-Pi Installation
+* BirdNET-Pi installation (for real-time bird call identification)
 
 ## Setup Steps
 
@@ -52,8 +52,8 @@ sudo apt install git -y
 * Clone this repository:
 
 ```bash
-git clone https://github.com/<your-username>/birdnet-weather-station.git
-cd birdnet-weather-station
+git clone https://github.com/rlpickett30/Weather_Station.git
+cd Weather_Station
 ```
 
 ### 3. Install Required Python Libraries
@@ -91,10 +91,18 @@ You should see the sensor addresses (typically 0x77 for BMP390 and 0x44 for SHT3
 Run the main weather station script:
 
 ```bash
-python3 weather_station.py
+python3 Weather_Station.py
 ```
 
-### 7. Integrate with BirdNET
+### 7. Install and Integrate BirdNET
+
+* Clone the BirdNET-Pi repository:
+
+```bash
+git clone https://github.com/mcguirepr89/BirdNET-Pi.git
+cd BirdNET-Pi
+./install.sh
+```
 
 * Follow the BirdNET setup guide to ensure the BirdNET server is running on the same Raspberry Pi.
 
@@ -124,3 +132,8 @@ MIT License
 ---
 
 Feel free to reach out for support or contribute to this project!
+
+### Additional Files
+
+* **BirdNET-Setup/install\_birdnet.sh**: Automated BirdNET installation script
+* **scripts/weather\_station.py**: Main weather station Python script
