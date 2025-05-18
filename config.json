@@ -1,0 +1,21 @@
+{
+  "database_path": "/mnt/weather_db/weather_station.db",
+  "sample_interval_sec": 300,
+  "daily_summary_time": "00:00",
+  "gps": {
+    "port": "/dev/serial0",
+    "baud_rate": 9600
+  },
+  "wind": {
+    "anem_pin": 17,
+    "cups_to_mph_factor": 2.4,
+    "adc_channel": 0,
+    "adc_vref": 3.3
+  },
+  "sea_level_pressure_hpa": 1013.25,
+  "flask": {
+    "host": "0.0.0.0",
+    "port": 8090
+  }
+}
+
